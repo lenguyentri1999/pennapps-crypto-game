@@ -4,9 +4,11 @@ class Boot extends Phaser.State {
     super();
   }
 
+  //------------- LOAD IMAGES TO USE IN GAME HERE ---------------- 
   preload() {
     this.load.image('preloader', 'assets/preloader.gif');
     this.load.image('coin', 'assets/coin.gif');
+    this.load.image('target', 'assets/circle.svg');
   }
 
   create() {

@@ -14,7 +14,16 @@ class Game extends Phaser.State {
     this.s = this.add.sprite(440,450, 'coin');
     this.game.physics.enable(this.s, Phaser.Physics.ARCADE);
     this.s.scale.setTo(0.3,0.3);
-    console.log(this.s)
+    console.log(this.s);
+
+    //--------- FUNCTION TO RANDOMLY GENERATE SPRITES ---------
+    var randomX = Math.floor(Math.random() * this.game.height);
+    var randomY = Math.floor(Math.random() * this.game.width);
+    console.log(randomX, randomY);
+    this.smallCoin = this.add.sprite(randomX, randomY, 'target');
+    this.smallCoin.scale.setTo(0.2, 0.2);
+    console.log(this.smallCoin);
+
 
 
     // this.input.onDown.add(this.endGame, this);
