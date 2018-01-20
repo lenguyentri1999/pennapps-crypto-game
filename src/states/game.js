@@ -9,6 +9,9 @@ class Game extends Phaser.State {
       font: '42px Arial', fill: '#ffffff', align: 'center'
     });
     text.anchor.set(0.5);
+    var s = this.add.sprite(80,0,'coin');
+    console.log(s)
+
 
     this.input.onDown.add(this.endGame, this);
   }
