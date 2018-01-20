@@ -26,6 +26,7 @@ class Boot extends Phaser.State {
       this.game.scale.setSize();
     }
 
+
     this.initGlobalVariables();
 
     this.game.state.start('preloader');
